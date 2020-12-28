@@ -52,7 +52,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'main_part.urls'
 import os
-STATIC_DIR=os.path.join(BASE_DIR,'static')
+#STATIC_DIR=os.path.join(BASE_DIR,'static')
 
 TEMPLATES = [
     {
@@ -121,7 +121,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[
-    STATIC_DIR,
-]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+if DEBUG:
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static')
+    ]
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
