@@ -261,7 +261,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="/static/images/img4.jpg" alt="Inr" style="width:100%">
+      {% load static %}
+      <img src="{% static 'images/img4.jpg'%}"/>
+    <!--<img src="/static/images/img4.jpg" alt="Inr" style="width:100%">-->
     <div class="w3-container">
       <h3><b>Ayyanar Vignesh</b></h3>
       <h5 style="color:blue;"><b>Software Engineer</b>, <span class="w3-opacity">December 22, 2020</span></h5>
