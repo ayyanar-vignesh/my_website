@@ -18,6 +18,16 @@ from django.urls import path
 from sub_part import views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.conf.urls.static import static
+from django.conf import settings
+from django.views.static import serve
+from django.conf.urls import url
+
+#Admin header customization
+admin.site.site_header="Login to Developer INR"
+admin.site.site_title="Welcome to INR Dashboard"
+admin.site.index_title="Welcome to this portal"
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +36,4 @@ urlpatterns = [
     path('contact/', views.contact, name="contact"),
     path('projects/', views.projects, name="projects"),
 
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
