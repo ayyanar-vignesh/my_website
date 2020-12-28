@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-#from sub_part.models import Contact
+from sub_part.models import Contact
 
 
 # Create your views here.
@@ -15,7 +15,7 @@ def about(request):
     return render(request, "sub_part/about.html", dic1)
 
 
-'''def contact(request):
+def contact(request):
     if request.method == "POST":
         name = request.POST['name']
         email = request.POST['email']
@@ -26,7 +26,7 @@ def about(request):
         ins.save()
         print("The data has been written to the db")
 
-    return render(request, "sub_part/contact.html")'''
+    return render(request, "sub_part/contact.html")
 
 
 def projects(request):
