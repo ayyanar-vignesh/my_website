@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>index</title>
+    {% load static %}
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+}
+
+body{
+  background: #030321;
+  font-family: Arial;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+    stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vert
+ical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+</style>
+
+</head>
+<body id="bg" style="background-image: url('{% static "images/start.gif"%}')";>
+<!--nav bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Developer_INR</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/projects">Projects</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://github.com/ayyanar-vignesh">Github</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/inr-vignesh-1a0867144/">Linkedin</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.instagram.com/inr_vignesh/">Instagram</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://twitter.com/InrVignesh">Twitter</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.youtube.com/channel/UCkB9JA_TRO69g6PAgzIX_hA">Youtube</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/ronaldoinr.inr">Facebook</a>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="templates/inr_resume.pdf"><i class="fa fa-download"></i>Download CV</a>
+        </li>
+         <li class="nav-item">
+        <a class="nav-link" href="/admin">Admin</a>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!--animation-->
+<div class="container">
+	<div class="row">
+	<svg viewBox="0 0 960 300">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="80%"> INR_Vignesh </text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+	</div>
+
+    <div class="row">
+
+        </div>
+    </div>
+</div>
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32">
+  <h1 class="text-center text-white"><b>Ayyanar Vignesh <span style="color:green;">MCA</span></b></h1>
+  <p class="text-center text-white"><marquee>Welcome to my personal portfolio</marquee></p>
+</header>
+
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="/static/images/img4.jpg" alt="Inr" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Ayyanar Vignesh</b></h3>
+      <h5 style="color:blue;"><b>Software Engineer</b>, <span class="w3-opacity">December 22, 2020</span></h5>
+    </div>
+
+    <div class="w3-container">
+        <p>My name is <b>Ayyanar Vigensh.M</b>. I was born and brought up in <b>Dindigul</b> and I am presently based out of same location.
+
+My highest degree is a full time MCA in Computer from <b>Loyola College, Chennai </b>that I completed in Jul-2020. My Percentage is 73.
+
+          I have also done a BCA degree in Computers from <b>St Josephs Arts and Science College (SJC), Trichy.</b> I finished my course successfully with 65%
+
+My Computers degree(s) have given a range of skills that I feel are crucial for my career and life. Despite limited exposure, I have understood that hard work and determination can make anything possible. I am ready to do that. Also, I am trying to develop a habit of reading current trends and industry news and technologies.
+
+When it comes to schooling, I secured 65.0% in 12th std .I am studying in <b> St mary's Higher Secondary School in Dindigul</b>. In Xth Tamil Nadu Board, I got 79.0%. During my schooling, I developed strong communication skills and also had the opportunity to participate and excel in several extracurricular activities. Because of these exposures and experiences during my academic years, I have gradually been able to develop effective communication skills. So, I can interact freely within a team.
+
+Lastly, I am a quick learner and believe in learning from my past mistakes. This is a virtue as it can take me ahead in both my professional and personal life.</p>
+
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="static/images/img2.jpg" alt="img2" style="width:100%">
+    <div class="w3-container">
+      <h3><b>I want to become a professional python developer</b></h3>
+      <h5 style="color:green;"><b>Short and long term goals</b> <span class="w3-opacity">Dec 22, 2020</span></h5>
+      <p>I have always categorized my career into short term and long term goals. It is beneficial as well as promising. I have worked for 4 Month(s) on the same principle in my previous company Flex.
+
+Surely I have a list of goals prepared for this job position. My short-term goals are fairly simple. I want to settle down in the new work environment as quickly as I can. It is necessary to adapt oneself to a new environment for better performance.
+
+Apart from this, my long-term goals are to grow into the job. Progress is the key. I want to see myself extracting every single drop of experience as I move ahead. These are not just goals but a guideline that I have to follow. In the end, it can be advantageous to me as well as this organization.</p>
+    </div>
+
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="static/images/img5.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Strength and Weakness</b></h4>
+      <p>My strength or strongest asset is my work ethic and my willingness to step in immediately. I am always comfortable to do a project part that nobody else wants to do because I feel these challenging bits offer the biggest learning opportunities of all.
+
+I typically love to work beyond pre-set expectations. I also take great pride in my ability to adapt quickly to deliver the best results.
+
+My weakness is that I am an introvert.</p>
+    </div>
+  </div><hr>
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="static/images/work.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Work Experience</b></h4>
+      <p>I have a total work experience of 4 Month(s) and the last company I worked with is Flex. I started working in Flex from November-2019 till March-2020. My last drawn salary is 1 Lakh(s) 25 Thousands per annum.
+
+I think I should also mention that apart from full time job experience, I also gained a lot of exposure during my internship(s) with Flex which was for a total duration of 3 Month(s).
+
+To add further, I have 6 months freelancing experience in python and django using web development .</p>
+    </div>
+  </div><hr>
+
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h2 class="text-white text-center"><b>Technical Skills</b></h2>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="static/images/python_logo.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Python3</span><br>
+
+      </li>
+      <li class="w3-padding-16">
+        <img src="static/images/django_logo.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Django</span><br>
+
+      </li>
+      <li class="w3-padding-16">
+        <img src="static/images/html_logo.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Html5 & Css3 & Javascript</span><br>
+
+      </li>
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="static/images/bootstrap.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Bootstrap</span><br>
+
+      </li>
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="static/images/jenkins.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Jenkins</span><br>
+
+      </li>
+       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="static/images/sqlite.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">SQLite</span><br>
+
+      </li>
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="static/images/rest.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Django Rest API</span><br>
+
+      </li>
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="static/images/docker.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Docker and Kubernetes</span><br>
+
+      </li>
+
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="static/images/sql.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">SQL Server 2017</span><br>
+
+      </li>
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="static/images/dotnet.png" alt="Image" class="w3-left w3-margin-right" style="width:30px">
+        <span class="w3-large">C#.Net</span><br>
+
+      </li>
+    </ul>
+  </div>
+  <hr>
+
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4 class="text-white text-center"><b>Interest</b></h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Meme Creation</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Swimming</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Video Editing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Studying</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Designing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span>
+    </p>
+    </div>
+  </div>
+
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!--card creation-->
+<h2 class="text-center text-white my-4 py-2">I am a...</h2>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <!--1st card-->
+        <div class="card" style="width: 18rem;">
+            {% load static %}<img class="card-img-top" src="{% static "images/img3.jpg" %}" alt="Hi!"/>
+            <div class="card-body">
+               <h5 class="card-title"><b>Designer</b></h5>
+                <p class="card-text">I have 1 year 6 months experience in web designing side.I know very well in html and css</p>
+
+            </div>
+        </div>
+
+        </div>
+        <div class="col-md-4">
+            <!--2nd card-->
+        <div class="card" style="width: 18rem;">
+            {% load static %}<img class="card-img-top" src="{% static "images/img1.jpg" %}" alt="Hi!"/>
+            <div class="card-body">
+               <h5 class="card-title"><b>Developer</b></h5>
+                <p class="card-text">I have develop many websites and blogs using python and django.</p>
+
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <!--3rd card-->
+        <div class="card" style="width: 18rem;">
+            {% load static %}<img class="card-img-top" src="{% static "images/img2.jpg" %}" alt="Hi!"/>
+            <div class="card-body">
+               <h5 class="card-title"><b>Entertainer</b></h5>
+                <p class="card-text">I am a meme creator.Right now i created 200+ memes and post into social medias</p>
+
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+</div>
+<!--youtube videos-->
+<h1 class="text-center text-white my-4">My Youtube Channel</h1>
+<div class="container my-3">
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/9XrVF5shSjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+<!--image gallery-->
+<h2  class="text-center text-white" style="text-align:center"> <b>My Slideshow Gallery</b></h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="static/images/img1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="static/images/img2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="static/images/img3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="static/images/img4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="static/images/img5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="static/images/inr.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="static/images/img1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Target achiever">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="static/images/img1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Team leader">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="static/images/img2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Hard worker">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="static/images/img3.jpg" style="width:100%" onclick="currentSlide(4)" alt="Passionate worker">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="static/images/img4.jpg" style="width:100%" onclick="currentSlide(5)" alt="Achiever">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="static/images/img5.jpg" style="width:100%" onclick="currentSlide(6)" alt="Time management">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white my-3">
+    <p class="text-center py-2 my-0">
+        Copyright &copy; inr|All rights reserved
+    </p>
+</footer>
+
+
+</body>
+
+</html>

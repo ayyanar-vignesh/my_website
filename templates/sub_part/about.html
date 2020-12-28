@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>about</title>
+     {% load static %}
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body id="bg" style="background-image: url('{% static "images/start.gif"%}')";>
+
+<!--nav bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Developer_INR</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/projects">Projects</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://github.com/ayyanar-vignesh">Github</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/inr-vignesh-1a0867144/">Linkedin</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.instagram.com/inr_vignesh/">Instagram</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://twitter.com/InrVignesh">Twitter</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.youtube.com/channel/UCkB9JA_TRO69g6PAgzIX_hA">Youtube</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/ronaldoinr.inr">Facebook</a>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="static/images/inr_resume.pdf"><i class="fa fa-download"></i>Download CV</a>
+        </li>
+         <li class="nav-item">
+        <a class="nav-link" href="/admin">Admin</a>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!--card creation-->
+<h2 class="text-center text-white my-4 py-2">I am a...</h2>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <!--1st card-->
+        <div class="card" style="width: 18rem;">
+            {% load static %}<img class="card-img-top" src="{% static "images/img3.jpg" %}" alt="Hi!"/>
+            <div class="card-body">
+               <h5 class="card-title"><b>Designer</b></h5>
+                <p class="card-text">I have 1 year 6 months experience in web designing side.I know very well in html and css</p>
+
+            </div>
+        </div>
+
+        </div>
+        <div class="col-md-4">
+            <!--2nd card-->
+        <div class="card" style="width: 18rem;">
+            {% load static %}<img class="card-img-top" src="{% static "images/img1.jpg" %}" alt="Hi!"/>
+            <div class="card-body">
+               <h5 class="card-title"><b>Developer</b></h5>
+                <p class="card-text">I have develop many websites and blogs using python and django.</p>
+
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <!--3rd card-->
+        <div class="card" style="width: 18rem;">
+            {% load static %}<img class="card-img-top" src="{% static "images/img2.jpg" %}" alt="Hi!"/>
+            <div class="card-body">
+               <h5 class="card-title"><b>Entertainer</b></h5>
+                <p class="card-text">I am a meme creator.Right now i created 200+ memes and post into social medias</p>
+
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white fixed-bottom">
+    <p class="text-center py-2 my-0">
+        Copyright &copy; 2021|All rights reserved
+    </p>
+</footer>
+
+
+</body>
+</html>
